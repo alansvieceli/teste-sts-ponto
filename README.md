@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/alansvieceli/teste-sts-ponto-inteligente.svg?branch=master)](https://travis-ci.org/alansvieceli/teste-sts-ponto-inteligente)
+
 # teste-sts-ponto
 Sistema de Ponto Eletronico
 
