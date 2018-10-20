@@ -12,5 +12,4 @@ Sistema de Ponto Eletronico
 - MySQL
 - JWT
 - Heroku
-
-Integração com TravisCI
+- Integração com TravisCI
