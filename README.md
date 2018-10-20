@@ -1,6 +1,6 @@
 [![Build Status](https://travis-ci.org/alansvieceli/teste-sts-ponto-inteligente.svg?branch=master)](https://travis-ci.org/alansvieceli/teste-sts-ponto-inteligente)
 
-# teste-sts-ponto
+# Curso de Spring Boot
 
 Sistema de Ponto Eletronico
 
@@ -9,7 +9,7 @@ Sistema de Ponto Eletronico
 - Services -> EhCache
 - JPARepository -> Entities
 - FlyWay
-- MySQL
+- MySQL e H2
 - JWT
 - Heroku
 - Integração com TravisCI
