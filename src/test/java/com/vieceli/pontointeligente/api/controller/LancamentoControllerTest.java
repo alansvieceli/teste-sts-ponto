@@ -97,7 +97,7 @@ public class LancamentoControllerTest {
 				.andExpect(status().isOk());
 	}
 	
-	/*
+	
 	@Test
 	@WithMockUser
 	public void testRemoverLancamentoAcessoNegado() throws Exception {
@@ -107,7 +107,7 @@ public class LancamentoControllerTest {
 				.accept(MediaType.APPLICATION_JSON))
 				.andExpect(status().isForbidden());
 	}
-	*/
+	
 
 	private String obterJsonRequisicaoPost() throws JsonProcessingException {
 		LancamentoDto lancamentoDto = new LancamentoDto();

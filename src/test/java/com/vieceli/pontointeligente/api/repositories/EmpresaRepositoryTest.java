@@ -36,7 +36,7 @@ public class EmpresaRepositoryTest {
 		this.empresaRepository.deleteAll();
 	}
 
-	@Test
+	@Test	
 	public void testBuscarPorCnpj() {
 		Empresa empresa = this.empresaRepository.findByCnpj(CNPJ);
 		

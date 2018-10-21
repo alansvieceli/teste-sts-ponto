@@ -8,13 +8,14 @@ Sistema de Ponto Eletronico
 - Controllers
 - Services -> EhCache
 - JPARepository -> Entities
-- BCrypt
-- FlyWay
+- BCrypt - criptografia de senha
+- FlyWay - versionamento do banco de dados
 - MySQL e H2
-- JWT
+- JWT - autenticação
 - Heroku
 - Integração com TravisCI
 - JUnit
+- Swagger - documentação da API
 -----------------------------------
 Sistema principal feito em MySQL e os testes sao executados com bando de dados H2
 

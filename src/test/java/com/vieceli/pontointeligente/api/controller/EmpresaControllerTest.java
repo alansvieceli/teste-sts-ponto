@@ -26,7 +26,7 @@ import com.vieceli.pontointeligente.api.services.EmpresaService;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-@AutoConfigureMockMvc //usar o contexto web pra reslizar os testes
+@AutoConfigureMockMvc // usar o contexto web pra reslizar os testes
 @ActiveProfiles("test")
 public class EmpresaControllerTest {
 
@@ -42,7 +42,7 @@ public class EmpresaControllerTest {
 	private static final String RAZAO_SOCIAL = "Empresa XYZ";
 
 	@Test
-	@WithMockUser
+	@WithMockUser //ele faz a autenticaç~;ao
 	public void testBuscarEmpresaCnpjInvalido() throws Exception {
 		BDDMockito.given(this.empresaService.buscarPorCnpj(Mockito.anyString())).willReturn(Optional.empty());
 
@@ -57,13 +57,10 @@ public class EmpresaControllerTest {
 		BDDMockito.given(this.empresaService.buscarPorCnpj(Mockito.anyString()))
 				.willReturn(Optional.of(this.obterDadosEmpresa()));
 
-		mvc.perform(MockMvcRequestBuilders.get(BUSCAR_EMPRESA_CNPJ_URL + CNPJ)
-				.accept(MediaType.APPLICATION_JSON))
-				.andExpect(status().isOk())
-				.andExpect(jsonPath("$.data.id").value(ID))
+		mvc.perform(MockMvcRequestBuilders.get(BUSCAR_EMPRESA_CNPJ_URL + CNPJ).accept(MediaType.APPLICATION_JSON))
+				.andExpect(status().isOk()).andExpect(jsonPath("$.data.id").value(ID))
 				.andExpect(jsonPath("$.data.razaoSocial", equalTo(RAZAO_SOCIAL)))
-				.andExpect(jsonPath("$.data.cnpj", equalTo(CNPJ)))
-				.andExpect(jsonPath("$.errors").isEmpty());
+				.andExpect(jsonPath("$.data.cnpj", equalTo(CNPJ))).andExpect(jsonPath("$.errors").isEmpty());
 	}
 
 	private Empresa obterDadosEmpresa() {

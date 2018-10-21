@@ -1,5 +1,8 @@
 package com.vieceli.pontointeligente.api.config;
 
+//desabilitar autenticacao
+
+/*
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.web.builders.WebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
@@ -14,3 +17,4 @@ public class ApplicationSecurity extends WebSecurityConfigurerAdapter {
                .antMatchers("/**");
     }
 }
+*/

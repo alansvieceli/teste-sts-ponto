@@ -70,7 +70,7 @@ public class CadastroPFController {
 		empresa.ifPresent(emp -> funcionario.setEmpresa(emp));
 		this.funcionarioService.persistir(funcionario);
 
-		response.setData(this.converterCadastroPFDto(funcionario));
+		response.setData(this.converterCadastroPFDto(funcionario));		
 		return ResponseEntity.ok(response);
 	}
 
