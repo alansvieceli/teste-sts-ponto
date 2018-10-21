@@ -19,5 +19,6 @@ Sistema de Ponto Eletronico
 Sistema principal feito em MySQL e os testes sao executados com bando de dados H2
 
 -----------------------------------
-Entidades / Enums
-Repositórios
+1. Entidades / Enums  (Entity)
+2. Repositórios       (JpaRepository)
+3. Serviços           (Interface e implementação)
