@@ -22,3 +22,5 @@ Sistema principal feito em MySQL e os testes sao executados com bando de dados H
 1. Entidades / Enums  (Entity)
 2. Repositórios       (JpaRepository)
 3. Serviços           (Interface e implementação)
+4. DTOS e Controllers
+
