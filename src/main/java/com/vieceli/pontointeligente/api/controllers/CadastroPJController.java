@@ -65,9 +65,9 @@ public class CadastroPJController {
 			return ResponseEntity.badRequest().body(response);
 		}
 
-		this.empresaService.persistir(empresa);
+		empresa = this.empresaService.persistir(empresa);
 		funcionario.setEmpresa(empresa);
-		this.funcionarioService.persistir(funcionario);
+		funcionario = this.funcionarioService.persistir(funcionario);
 
 		response.setData(this.converterCadastroPJDto(funcionario));
 		return ResponseEntity.ok(response);

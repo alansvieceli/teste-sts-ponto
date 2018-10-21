@@ -67,10 +67,11 @@ public class CadastroPFController {
 		}
 		
 		Optional<Empresa> empresa = this.empresaService.buscarPorCnpj(cadastroPFDto.getCnpj());
-		empresa.ifPresent(emp -> funcionario.setEmpresa(emp));
-		this.funcionarioService.persistir(funcionario);
+		empresa.ifPresent(emp -> funcionario.setEmpresa(emp));			
+		
+		Funcionario func = this.funcionarioService.persistir(funcionario);
 
-		response.setData(this.converterCadastroPFDto(funcionario));		
+		response.setData(this.converterCadastroPFDto(func));		
 		return ResponseEntity.ok(response);
 	}
 
