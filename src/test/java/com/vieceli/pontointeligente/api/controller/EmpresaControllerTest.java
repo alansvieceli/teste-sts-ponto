@@ -26,7 +26,7 @@ import com.vieceli.pontointeligente.api.services.EmpresaService;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-@AutoConfigureMockMvc
+@AutoConfigureMockMvc //usar o contexto web pra reslizar os testes
 @ActiveProfiles("test")
 public class EmpresaControllerTest {
 
